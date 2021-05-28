@@ -1,0 +1,22 @@
+{
+  "name": "iiitd-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananyalohani/IIITD-Resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ananyalohani/IIITD-Resume/issues"
+  },
+  "homepage": "https://github.com/ananyalohani/IIITD-Resume#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

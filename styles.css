@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Source Sans Pro' !important;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+p,
+ul,
+li,
+table,
+th,
+td {
+  font-size: 11pt;
+  line-height: 1.25;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px;
+  margin-top: -10px;
+}
+
+#name {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-size: 27pt;
+}
+
+p {
+  font-size: 11pt;
+}
+
+a {
+  color: #124ee8;
+}
+
+strong {
+  font-weight: 600 !important;
+}
+
+.section {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.iiitd-logo {
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 30px;
+  width: 100px;
+}
+
+.section-title {
+  font-size: 11pt;
+  text-transform: uppercase;
+  width: 100%;
+  background: #dbdddf;
+  padding: 5px 5px 6px 0px !important;
+  padding-bottom: 5px !important;
+  padding-left: 6px !important;
+}
+
+.section-title h3 {
+  width: min-content;
+}
+
+#education .section-element {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-element {
+  width: 98%;
+  margin: 3px auto;
+  display: flex;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.left p,
+.right p {
+  margin: 1px 0 !important;
+}
+
+.right p {
+  text-align: right;
+}
+
+#skill-table {
+  margin-top: 5px !important;
+  width: 98%;
+  margin: 0 auto;
+  font-size: 11pt !important;
+}
+
+#skill-table th {
+  text-align: left !important;
+  font-weight: 600 !important;
+  width: 160px !important;
+  vertical-align: top;
+  padding-right: 10px !important;
+}
+
+#skill-table th,
+td {
+  padding: 5px 0;
+}
+
+#work-experience .section-element,
+#projects .section-element {
+  flex-direction: column;
+  width: 98%;
+  margin: 5px auto;
+}
+
+#projects .section-element {
+  margin: 3px auto !important;
+}
+
+.heading {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  width: 98%;
+  margin: 0 auto;
+  list-style: disc;
+  list-style-position: inside;
+  text-indent: -15px;
+  margin-left: 20px;
+}
+
+li {
+  margin: 2px 0;
+}
+
+ul li::marker {
+  font-size: 0.8em;
+}
+
+li:after {
+  /* margin-left: -5px; */
+}
+
+.underline {
+  text-decoration: underline;
+}

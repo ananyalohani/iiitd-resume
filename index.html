@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>A4</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css"
+    />
+    <style>
+      @page {
+        size: A4;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="node_modules/js-yaml/dist/js-yaml.min.js"></script>
+  </head>
+  <body class="A4">
+    <section class="sheet padding-10mm">
+      <img src="iiitd.png" class="iiitd-logo" />
+      <div class="page">
+        <div id="header">
+          <h1 id="name">Ananya Lohani</h1>
+          <p>
+            2019018 | <strong>Email:</strong>
+            <a href="mailto:ananya19018@iiitd.ac.in">ananya19018@iiitd.ac.in</a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://ananya.li/gh" target="_blank">@ananyalohani</a> |
+            <strong>LinkedIn:</strong>
+            <a href="https://ananya.li/linkedin" target="_blank"
+              >@ananyalohani</a
+            >
+          </p>
+          <p>
+            <strong>DOB:</strong>
+            11 June 2001 |
+            <strong>Website:</strong>
+            <a href="https://ananya.li" target="_blank">ananyalohani.me</a>
+          </p>
+        </div>
+        <div id="education" class="section">
+          <h3 class="section-title">Education</h3>
+        </div>
+        <div id="skills" class="section">
+          <h3 class="section-title">Skills</h3>
+          <table id="skill-table"></table>
+        </div>
+        <div id="work-experience" class="section">
+          <h3 class="section-title">Work Experience</h3>
+        </div>
+      </div>
+    </section>
+    <section class="sheet padding-10mm">
+      <div class="page">
+        <div id="projects" class="section">
+          <h3 class="section-title">Projects</h3>
+        </div>
+        <div id="por" class="section">
+          <h3 class="section-title">Positions of Responsibility</h3>
+        </div>
+        <div id="awards" class="section">
+          <h3 class="section-title">Awards and Achievements</h3>
+          <ul id="awards-list"></ul>
+        </div>
+        <div id="interests" class="section">
+          <h3 class="section-title">Interests and Hobbies</h3>
+          <ul>
+            <li>
+              <strong>Music</strong> - Active member of Audiobytes since 2019.
+            </li>
+            <li>
+              <strong>Art</strong> - Made an
+              <a href="https://www.instagram.com/lohani_art/"
+                >Instagram account</a
+              >
+              and
+              <a href="https://www.youtube.com/channel/UCD027JiYyUAsKUrKOlms2iA"
+                >Youtube channel</a
+              >
+              dedicated to art.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>
+            <strong>Declaration:</strong> The above information is correct to
+            the best of my knowledge.
+          </p>
+          <p>Ananya Lohani</p>
+          <p>Date: 27 May, 2021</p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    $.get('data.yaml', function (text) {
+      const data = jsyaml.load(text);
+      console.log(data);
+
+      const educationNode = document.getElementById('education');
+      let eduHTML = '';
+      data.education.map((item) => {
+        eduHTML += `<div class="section-element">
+            <div class="left">
+              <p>
+                <strong>
+                  ${item.institution}</strong
+                >
+              </p>
+              <p>${item.degree}</p>
+              <p>${item.duration}</p>
+            </div>
+            <div class="right">
+              <p><strong>${item.grade.split(':')[0]}:</strong>${
+          item.grade.split(':')[1]
+        }</p>
+              <p>${item.note ? item.note : ''}</p>
+            </div>
+          </div>`;
+      });
+      educationNode.innerHTML += eduHTML;
+
+      const skillsNode = document.getElementById('skill-table');
+      let skillsHTML = '';
+      data.skills.map((item) => {
+        skillsHTML += `<tr>
+            <th>${item.title}</th>
+            <td>${item.value}</td>
+          </tr>`;
+      });
+      skillsNode.innerHTML = skillsHTML;
+
+      const workNode = document.getElementById('work-experience');
+      let workHTML = '';
+      data.work_experience.map((item) => {
+        let workLinks = '';
+        if (item.links)
+          item.links.map((i) => {
+            workLinks += ` | <a href='${i.link}'>${i.name.split(' ')[0]}</a> ${
+              i.name.split(' ')[1] ? i.name.split(' ')[1] : ''
+            }`;
+          });
+
+        let workBullets = '';
+        item.bullets.map((i) => {
+          workBullets += `<li>${i}</li>`;
+        });
+
+        let ts = '';
+        if (item.tech_stack)
+          ts += `<li><strong>Tech Stack:</strong> ${item.tech_stack}</li>`;
+
+        workHTML += `<div class="section-element">
+            <div class="heading">
+              <div class="left">
+                <p><strong>${item.title}</strong>${workLinks}</p>
+                <p>${item.subtitle}</p>
+              </div>
+              <div class="right">
+                <p>${item.duration}</p>
+              </div>
+            </div>
+            <ul>
+              ${ts}
+              ${workBullets}
+            </ul>
+          </div>`;
+      });
+      workNode.innerHTML += workHTML;
+
+      const projectNode = document.getElementById('projects');
+      let projectHTML = '';
+      data.projects.map((item) => {
+        let projectLinks = '';
+        if (item.links)
+          item.links.map((i) => {
+            projectLinks += ` | <a href='${i.link}'>${i.name}</a>`;
+          });
+
+        let projectBullets = '';
+        item.bullets.map((i) => {
+          projectBullets += `<li>${i}</li>`;
+        });
+
+        let ts = '';
+        if (item.tech_stack)
+          ts += `<li><strong class="underline">Tech Stack:</strong> ${item.tech_stack}</li>`;
+
+        projectHTML += `<div class="section-element">
+            <div class="heading">
+              <div class="left">
+                <p><strong>${item.title}</strong>${projectLinks} <em>${
+          item.note ? item.note : ''
+        }</em></p>
+                <p>${item.subtitle}</p>
+              </div>
+              <div class="right">
+                <p>${item.duration}</p>
+                <p>${
+                  item.team_size === 1
+                    ? 'Individual'
+                    : 'Team Size: ' + item.team_size
+                }</p>
+              </div>
+            </div>
+            <ul>
+              ${ts}
+              ${projectBullets}
+            </ul>
+          </div>`;
+      });
+      projectNode.innerHTML += projectHTML;
+
+      const porNode = document.getElementById('por');
+      let porHTML = '';
+      data.leadership.map((item) => {
+        porHTML += ``;
+      });
+      porNode.innerHTML += porHTML;
+
+      const awardNode = document.getElementById('awards-list');
+      let awardHTML = '';
+      data.achievements.map((item) => {
+        awardHTML += ``;
+      });
+      awardNode.innerHTML += awardHTML;
+    });
+  </script>
+</html>

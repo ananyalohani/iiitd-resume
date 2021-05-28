@@ -1,0 +1,145 @@
+# ? EDUCATION
+education:
+  - institution: Indraprastha Institute of Information Technology, Delhi
+    degree: B.Tech. CSE
+    duration: 2019 - 2023 (Present)
+    grade: 'CGPA: 9.35*'
+    note: (Till 4th Semester)
+  - institution: CRPF Public School, Rohini
+    degree: CBSE Standard 12, PCM + CS
+    duration: 2017 - 2019
+    grade: 'Percentage: 96%'
+
+# ? SKILLS
+skills:
+  - title: Expertise Area
+    value: Data Structures and Algorithms, Full Stack Development, Object Oriented Programming
+  - title: Programming Languages
+    value: 'Java, JavaScript - 15k lines<br/>C/C++ - 10k lines<br/>Python, TypeScript - 5k lines'
+  - title: Tools and Technologies
+    value: Git, ReactJS, NodeJS, GatsbyJS, GraphQL, HTML, CSS, TailwindCSS, Svelte, Google Firebase, MySQL
+  - title: Technical Electives
+    value: Data Structures and Algorithms, Analysis and Design of Algorithms, Advanced Programming in Java, Computer Organization, Operating Systems, Discrete Maths, Database Management Systems
+
+# ? WORK EXPERIENCE
+work_experience:
+  - title: Web Developer, Official Website of CSE Department IIIT Delhi
+    subtitle: 'Supervisor: Dr. Koteswar Rao Jerripothula'
+    duration: Feb' 21 - Present
+    links:
+      - name: Website (Ongoing)
+        link: https://ananya.li/iiitd-cse
+    tech_stack: GatsbyJS, GraphQL, NetlifyCMS, CSS
+    bullets:
+      - Designed and developed the official website of the CSE department using GatsbyJS.
+      - Deployed a headless CMS using NetlifyCMS and improved the management of website content and articles.
+  - title: Web Design Intern, Vinci Stationery
+    subtitle: 'Founder: Ms. Anisha Mata'
+    duration: Jan' 21 - Feb' 21
+    links:
+      - name: Website
+        link: https://vincistationery.com
+    tech_stack: Wix, JavaScript, Velo API
+    bullets:
+      - Redesigned and restructured the official e-commerce website of the company that brought in 200+ new users.
+      - 'Delivered custom elements by using <strong>Velo API by Wix</strong>, like a custom product carousel.'
+  - title: '[Volunteer] Web Developer, Rising Star Khilte Chehre (NGO)'
+    subtitle: 'Founder: Mr. Nishant Jain'
+    duration: May' 21 - Present
+    links:
+      - name: Website
+        link: https://risingstarkhiltechehre.org
+    tech_stack: Wordpress, CSS, MySQL
+    bullets:
+      - Improved accessibility by making the website colorblind-safe. Fixed UI bugs.
+      - Building an authentication system for various stakeholders of the NGO.
+  - title: '[Volunteer] Instructor, Vidyakansha (NGO)'
+    subtitle: 'Founder: Ms. Aishwarya Misra'
+    duration: Jul' 20 - Sep' 20
+    bullets:
+      - Contributed towards providing free and quality education to 460 children in 28 villages across India.
+      - Conducted live online classes in English and Mathematics for elementary and middle school students adversely affected by COVID-19.
+
+# ? PROJECTS
+projects:
+  - title: IIITD Playbook
+    subtitle: Student Initiative
+    duration: Jan' 21 - Present
+    team_size: 5
+    links:
+      - name: Website
+        link: https://iiitdplaybook.web.app/homepage
+      - name: GitHub
+        link: https://ananya.li/pb
+    tech_stack: ReactJS, Google Firebase, CSS, Material-UI
+    bullets:
+      - IIITD Playbook provides multiple strategies, experiences, and stories from seniors and alumni to guide the current students of the college.
+      - Coded the homepage, supplies, quickbites, and internship pages and redesigned the footer.
+      - Optimized the performance of the website by hosting static assets on Statically.
+      - Mentored new members on the web development team.
+  - title: Mausam
+    subtitle: Personal Project
+    duration: May' 21
+    team_size: 1
+    links:
+      - name: Website
+        link: https://ananya.li/mausam
+      - name: GitHub
+        link: https://github.com/ananyalohani/mausam
+    tech_stack: React with TypeScript, TailwindCSS, SWR
+    bullets:
+      - Mausam is a web app that fetches the weather data for the next 6 days from Metaweather API.
+      - Engineered a search bar with autocompletion that fetches cities from OpenStreetMap API.
+  - title: Tiiime
+    note: (Top 3 out of 50+ teams)
+    subtitle: 'Guide: Dr. Grace Eden'
+    duration: Feb' 21 - Apr' 21
+    team_size: 5
+    links:
+      - name: Behance
+        link: https://ananya.li/tiiime
+    bullets:
+      - Conceptualised a crowdsourced planner that notifies users of events/activities scheduled by the channels of the college.
+      - 'Conducted user surveys and designed low, medium and high fidelity prototypes on <strong>Figma</strong>.'
+  - title: Color Switch
+    subtitle: 'Guide: Dr. Vivek Kumar'
+    duration: Nov' 20 - Dec' 20
+    team_size: 2
+    links:
+      - name: GitHub
+        link: https://github.com/ananyalohani/color-switch-java
+    tech_stack: Java, JavaFX, FXML, CSS, Gradle
+    bullets:
+      - Developed a clone of the popular Play Store app Color Switch for desktop using object-oriented and event-driven programming.
+      - Utilised the Serializable Interface in Java to save games.
+  - title: Perceptris
+    note: (Top 3 out of 100+ teams)
+    subtitle: 'Guide: Dr. Aman Parnami'
+    duration: Aug' 19 - Sep' 19
+    team_size: 3
+    links:
+      - name: GitHub
+        link: https://github.com/ananyalohani/Perceptris
+    tech_stack: Arduino, Processing, C++
+    bullets:
+      - Built a multiplayer, human interactive version of the popular game Tetris using sensors like ultrasonic, touch and piezoelectric sensors.
+
+# ? POSITIONS OF RESPONSIBILITY
+leadership:
+  - position: '<strong>Mentored</strong> the web development team of IIITD Playbook, consisting of 5 members.'
+    duration: Jan' 21 - Present
+  - position: '<strong>Webmaster</strong> of the official website of CSE department of IIIT Delhi.'
+    duration: Feb' 21 - Present
+  - position: '<strong>President</strong> of Audiobytes, leading 80+ members of the music club of IIIT Delhi.'
+    duration: May 21 - Present
+  - position: '<strong>Cultural Council Member</strong>, organised events in IIITD with participation of 500+ students.'
+    duration: Jan' 21 - Present
+  - position: '<strong>Event Head</strong> at Odyssey 2020 (cultural fest). Organised Acapellujah in a team of 3 with participation of 40+ colleges and amassed a sponsorship amount of INR 2 Lacs.'
+    duration: Jan' 21 - Present
+
+# ? AWARDS AND ACHIEVEMENTS
+achievements:
+  - "<strong>Dean's List Award</strong> for Academic Excellence 2021."
+  - '<strong>99.879th Percentile</strong> in JEE Main 2019 (Top 0.2%).'
+  - '<strong>Gold Medal</strong> in Intraschool Mathematics Olympiad 2018.'
+  - 'Awarded <strong>Distinction</strong> (highest grade) in Grade 3, Trinity Rock & Pop Vocals exam in 2015.'
