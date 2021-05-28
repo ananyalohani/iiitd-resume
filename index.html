@@ -64,6 +64,7 @@
         </div>
         <div id="por" class="section">
           <h3 class="section-title">Positions of Responsibility</h3>
+          <ul id="por-list"></ul>
         </div>
         <div id="awards" class="section">
           <h3 class="section-title">Awards and Achievements</h3>
@@ -218,17 +219,22 @@
       });
       projectNode.innerHTML += projectHTML;
 
-      const porNode = document.getElementById('por');
+      const porNode = document.getElementById('por-list');
       let porHTML = '';
       data.leadership.map((item) => {
-        porHTML += ``;
+        porHTML += `<li>
+          <div>
+            <p class="position">${item.position}</p>
+            <p>${item.duration}</p>
+          </div>
+        </li>`;
       });
       porNode.innerHTML += porHTML;
 
       const awardNode = document.getElementById('awards-list');
       let awardHTML = '';
       data.achievements.map((item) => {
-        awardHTML += ``;
+        awardHTML += `<li>${item}</li>`;
       });
       awardNode.innerHTML += awardHTML;
     });

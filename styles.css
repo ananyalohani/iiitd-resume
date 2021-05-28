@@ -182,3 +182,23 @@ li:after {
 .underline {
   text-decoration: underline;
 }
+
+#por-list {
+  text-indent: 0;
+  margin-left: 10px;
+}
+
+#por-list li p {
+  display: inline;
+}
+
+#por-list li div {
+  display: inline-flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#por-list .position {
+  max-width: 550px;
+}
