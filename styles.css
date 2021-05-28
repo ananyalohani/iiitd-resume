@@ -31,7 +31,7 @@ li,
 table,
 th,
 td {
-  font-size: 11pt;
+  font-size: 10.75pt;
   line-height: 1.25;
 }
 
@@ -52,7 +52,7 @@ td {
 }
 
 p {
-  font-size: 11pt;
+  font-size: 10.75pt;
 }
 
 a {
@@ -80,13 +80,14 @@ strong {
 }
 
 .section-title {
-  font-size: 11pt;
+  font-size: 10.75pt;
   text-transform: uppercase;
   width: 100%;
   background: #dbdddf;
   padding: 5px 5px 6px 0px !important;
   padding-bottom: 5px !important;
   padding-left: 6px !important;
+  margin-bottom: 6px !important;
 }
 
 .section-title h3 {
@@ -123,7 +124,7 @@ strong {
   margin-top: 5px !important;
   width: 98%;
   margin: 0 auto;
-  font-size: 11pt !important;
+  font-size: 10.75pt !important;
 }
 
 #skill-table th {
@@ -145,10 +146,10 @@ td {
   width: 98%;
   margin: 5px auto;
 }
-
+/*
 #projects .section-element {
-  margin: 3px auto !important;
-}
+  margin: 2px auto !important;
+} */
 
 .heading {
   width: 100%;
@@ -163,16 +164,20 @@ ul {
   margin: 0 auto;
   list-style: disc;
   list-style-position: inside;
-  text-indent: -15px;
-  margin-left: 20px;
+  text-indent: -20px;
+  margin-left: 22px;
 }
 
 li {
   margin: 2px 0;
 }
+/*
+#projects li {
+  margin: 1.5px 0;
+} */
 
 ul li::marker {
-  font-size: 0.8em;
+  font-size: 0.825em;
 }
 
 li:after {
@@ -185,7 +190,7 @@ li:after {
 
 #por-list {
   text-indent: 0;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #por-list li p {
@@ -194,11 +199,17 @@ li:after {
 
 #por-list li div {
   display: inline-flex;
-  width: 95%;
+  width: 97%;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 #por-list .position {
-  max-width: 550px;
+  max-width: 575px;
+}
+
+#awards ul,
+#interests ul {
+  text-indent: -17px;
+  margin-left: 22px;
 }
