@@ -6,12 +6,20 @@
   margin: 0;
 }
 
-.page {
+#page1 {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1,
@@ -120,24 +128,19 @@ strong {
   text-align: right;
 }
 
-#skill-table {
-  margin-top: 5px !important;
+#skill-grid {
   width: 98%;
-  margin: 0 auto;
-  font-size: 10.75pt !important;
+  margin: 8px auto;
+  display: grid;
+  /* grid-template-columns: repeat(2, auto); */
+  grid-template-columns: 180px auto;
+  gap: 10px;
+  font-size: 10.5pt;
 }
 
-#skill-table th {
-  text-align: left !important;
-  font-weight: 600 !important;
-  width: 160px !important;
-  vertical-align: top;
-  padding-right: 10px !important;
-}
-
-#skill-table th,
-td {
-  padding: 5px 0;
+.grid-row {
+  line-height: 1.25;
+  display: contents;
 }
 
 #work-experience .section-element,
@@ -146,10 +149,10 @@ td {
   width: 98%;
   margin: 5px auto;
 }
-/*
+
 #projects .section-element {
-  margin: 2px auto !important;
-} */
+  margin: 3px auto !important;
+}
 
 .heading {
   width: 100%;
@@ -193,7 +196,7 @@ li:after {
   margin-left: 5px;
 }
 
-#por-list li p {
+/* #por-list li p {
   display: inline;
 }
 
@@ -206,6 +209,25 @@ li:after {
 
 #por-list .position {
   max-width: 575px;
+}
+ */
+
+#por-grid {
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(2, auto); */
+  grid-template-columns: auto 120px;
+  /* gap: 10px; */
+  font-size: 10.5pt;
+}
+
+#por-grid li {
+  margin: 2px 0;
+}
+
+#por-grid .duration {
+  text-align: right;
 }
 
 #awards ul,

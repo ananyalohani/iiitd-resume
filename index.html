@@ -23,7 +23,7 @@
   <body class="A4">
     <section class="sheet padding-10mm">
       <img src="iiitd.png" class="iiitd-logo" />
-      <div class="page">
+      <div id="page1">
         <div id="header">
           <h1 id="name">Ananya Lohani</h1>
           <p>
@@ -50,7 +50,7 @@
         </div>
         <div id="skills" class="section">
           <h3 class="section-title">Skills</h3>
-          <table id="skill-table"></table>
+          <div id="skill-grid"></div>
         </div>
         <div id="work-experience" class="section">
           <h3 class="section-title">Work Experience</h3>
@@ -58,13 +58,13 @@
       </div>
     </section>
     <section class="sheet padding-10mm">
-      <div class="page">
+      <div id="page2">
         <div id="projects" class="section">
           <h3 class="section-title">Projects</h3>
         </div>
         <div id="por" class="section">
           <h3 class="section-title">Positions of Responsibility</h3>
-          <ul id="por-list"></ul>
+          <div id="por-grid"></div>
         </div>
         <div id="awards" class="section">
           <h3 class="section-title">Awards and Achievements</h3>
@@ -128,13 +128,13 @@
       });
       educationNode.innerHTML += eduHTML;
 
-      const skillsNode = document.getElementById('skill-table');
+      const skillsNode = document.getElementById('skill-grid');
       let skillsHTML = '';
       data.skills.map((item) => {
-        skillsHTML += `<tr>
-            <th>${item.title}</th>
-            <td>${item.value}</td>
-          </tr>`;
+        skillsHTML += `<div class='grid-row'>
+            <div class='grid-item'><strong>${item.title}</strong></div>
+            <div class='grid-item'>${item.value}</div>
+          </div>`;
       });
       skillsNode.innerHTML = skillsHTML;
 
@@ -156,7 +156,7 @@
 
         let ts = '';
         if (item.tech_stack)
-          ts += `<li><strong>Tech Stack:</strong> ${item.tech_stack}</li>`;
+          ts += `<li><strong class='underline'>Tech Stack:</strong> ${item.tech_stack}</li>`;
 
         workHTML += `<div class="section-element">
             <div class="heading">
@@ -219,15 +219,15 @@
       });
       projectNode.innerHTML += projectHTML;
 
-      const porNode = document.getElementById('por-list');
+      const porNode = document.getElementById('por-grid');
       let porHTML = '';
       data.leadership.map((item) => {
-        porHTML += `<li>
-          <div>
-            <p class="position">${item.position}</p>
-            <p>${item.duration}</p>
+        porHTML += `
+          <div class='grid-row'>
+            <ul class='grid-item'><li>${item.position}</li></ul>
+            <span class='grid-item duration'>${item.duration}</span>
           </div>
-        </li>`;
+        `;
       });
       porNode.innerHTML += porHTML;
 

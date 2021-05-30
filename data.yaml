@@ -23,7 +23,7 @@ skills:
 
 # ? WORK EXPERIENCE
 work_experience:
-  - title: Web Developer, Official Website of CSE Department IIIT Delhi
+  - title: Web Developer, O<span>f</span><span>f</span>icial Website of CSE Department IIIT Delhi
     subtitle: 'Supervisor: Dr. Koteswar Rao Jerripothula'
     duration: Feb’ 21 - Present
     links:
@@ -31,7 +31,7 @@ work_experience:
         link: https://ananya.li/iiitd-cse
     tech_stack: GatsbyJS, GraphQL, NetlifyCMS, CSS
     bullets:
-      - Designed and developed the official website of the CSE department using GatsbyJS.
+      - Designed and developed the o<span>f</span><span>f</span>icial website of the CSE department using GatsbyJS.
       - Deployed a headless CMS using NetlifyCMS and improved the management of website content and articles.
   - title: Web Design Intern, Vinci Stationery
     subtitle: 'Founder: Ms. Anisha Mata'
@@ -41,7 +41,7 @@ work_experience:
         link: https://vincistationery.com
     tech_stack: Wix, JavaScript, Velo API
     bullets:
-      - Redesigned and restructured the official e-commerce website of the company that brought in 200+ new users.
+      - Redesigned and restructured the o<span>f</span><span>f</span>icial e-commerce website of the company that brought in 200+ new users.
       - 'Delivered custom elements by using <strong>Velo API by Wix</strong>, like a custom product carousel.'
   - title: '[Volunteer] Web Developer, Rising Star Khilte Chehre (NGO)'
     subtitle: 'Founder: Mr. Nishant Jain'
@@ -58,7 +58,7 @@ work_experience:
     duration: Jul’ 20 - Sep’ 20
     bullets:
       - Contributed towards providing free and quality education to 460 children in 28 villages across India.
-      - Conducted live online classes in English and Mathematics for elementary and middle school students adversely affected by COVID-19.
+      - Conducted live online classes in English and Mathematics for elementary and middle school students adversely a<span>f</span><span>f</span>ected by COVID-19.
 
 # ? PROJECTS
 projects:
@@ -128,7 +128,7 @@ projects:
 leadership:
   - position: '<strong>Mentored</strong> the web development team of IIITD Playbook, consisting of 5 members.'
     duration: Jan’ 21 - Present
-  - position: '<strong>Webmaster</strong> of the official website of CSE department of IIIT Delhi.'
+  - position: '<strong>Webmaster</strong> of the o<span>f</span><span>f</span>icial website of CSE department of IIIT Delhi.'
     duration: Feb’ 21 - Present
   - position: '<strong>President</strong> of Audiobytes, leading 80+ members of the music club of IIIT Delhi.'
     duration: May’ 21 - Present
