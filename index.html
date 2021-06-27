@@ -42,7 +42,7 @@
             <strong>DOB:</strong>
             11 June 2001 |
             <strong>Website:</strong>
-            <a href="https://ananya.li" target="_blank">ananyalohani.me</a>
+            <a href="https://lohani.dev/" target="_blank">lohani.dev</a>
           </p>
         </div>
         <div id="education" class="section">
@@ -182,9 +182,9 @@
         let projectLinks = '';
         if (item.links)
           item.links.map((i) => {
-            projectLinks += ` | <a href='${i.link}'>${i.name.split(' ')[0]}</a> ${
-              i.name.split(' ')[1] ? i.name.split(' ')[1] : ''
-            }`;
+            projectLinks += ` | <a href='${i.link}'>${
+              i.name.split(' ')[0]
+            }</a> ${i.name.split(' ')[1] ? i.name.split(' ')[1] : ''}`;
           });
 
         let projectBullets = '';
