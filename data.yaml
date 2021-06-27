@@ -17,12 +17,21 @@ skills:
   - title: Programming Languages
     value: 'Java, JavaScript - 15k lines<br/>C/C++ - 10k lines<br/>Python, TypeScript - 5k lines'
   - title: Tools and Technologies
-    value: Git, ReactJS, NodeJS, GatsbyJS, GraphQL, HTML, CSS, TailwindCSS, Svelte, Google Firebase, MySQL
+    value: Git, NextJS, ReactJS, NodeJS, GatsbyJS, GraphQL, HTML, CSS, TailwindCSS, Svelte, MongoDB, Mongoose, Firebase, MySQL
   - title: Technical Electives
     value: Data Structures and Algorithms, Analysis and Design of Algorithms, Advanced Programming in Java, Computer Organization, Operating Systems, Discrete Maths, Database Management Systems
 
 # ? WORK EXPERIENCE
 work_experience:
+  - title: Microsoft Engage
+    subtitle: Mentorship
+    duration: Jun’ 21 - Present
+    links:
+      - name: Website
+        link: https://microsoft.acehacker.com/engage2021/
+    bullets:
+      - Got the opportunity to be mentored by, and be a part of AMA Sessions, Webinars and talks by Microsoft employees.
+      - Architected and deployed a fully-featured video calling web-app under the guidance and feedback of mentors.
   - title: Web Developer, O<span>f</span><span>f</span>icial Website of CSE Department IIIT Delhi
     subtitle: 'Supervisor: Dr. Koteswar Rao Jerripothula'
     duration: Feb’ 21 - Present
@@ -53,15 +62,20 @@ work_experience:
     bullets:
       - Improved accessibility by making the website colorblind-safe. Fixed UI bugs.
       - Building an authentication system for various stakeholders of the NGO.
-  - title: '[Volunteer] Instructor, Vidyakansha (NGO)'
-    subtitle: 'Founder: Ms. Aishwarya Misra'
-    duration: Jul’ 20 - Sep’ 20
-    bullets:
-      - Contributed towards providing free and quality education to 460 children in 28 villages across India.
-      - Conducted live online classes in English and Mathematics for elementary and middle school students adversely a<span>f</span><span>f</span>ected by COVID-19.
 
 # ? PROJECTS
 projects:
+  - title: Microsoft Teams Clone
+    subtitle: 'Mentor: Mr. Shanav Asija, Senior SWE at Microsoft'
+    duration: Jun’ 21 - Present
+    team_size: 1
+    links:
+      - name: Website (Ongoing)
+        link: https://msft.lohani.dev/
+    bullets:
+      - Architected a fully-featured clone of Microsoft Teams, supporting video calling, group chat, and user authentication.
+      - Utilised WebSockets, WebRTC to establish secure connections between peers, and SFU for multi-party video calls.
+    tech_stack: Next.js, TailwindCSS, Express, MongoDB, Mongoose, WebRTC, Socket.io
   - title: IIITD Playbook
     subtitle: Student Initiative
     duration: Jan’ 21 - Present
@@ -90,17 +104,6 @@ projects:
     bullets:
       - Mausam is a web app that fetches the weather data for the next 6 days from Metaweather API.
       - Engineered a search bar with autocompletion that fetches cities from OpenStreetMap API.
-  - title: Tiiime
-    note: (Top 3 out of 50+ teams)
-    subtitle: 'Guide: Dr. Grace Eden'
-    duration: Feb’ 21 - Apr’ 21
-    team_size: 5
-    links:
-      - name: Behance
-        link: https://ananya.li/tiiime
-    bullets:
-      - Conceptualised a crowdsourced planner that notifies users of events/activities scheduled by the channels of the college.
-      - 'Conducted user surveys and designed low, medium and high fidelity prototypes on <strong>Figma</strong>.'
   - title: Color Switch
     subtitle: 'Guide: Dr. Vivek Kumar'
     duration: Nov’ 20 - Dec’ 20

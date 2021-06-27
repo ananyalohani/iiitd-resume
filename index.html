@@ -182,7 +182,9 @@
         let projectLinks = '';
         if (item.links)
           item.links.map((i) => {
-            projectLinks += ` | <a href='${i.link}'>${i.name}</a>`;
+            projectLinks += ` | <a href='${i.link}'>${i.name.split(' ')[0]}</a> ${
+              i.name.split(' ')[1] ? i.name.split(' ')[1] : ''
+            }`;
           });
 
         let projectBullets = '';
