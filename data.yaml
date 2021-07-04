@@ -17,14 +17,14 @@ skills:
   - title: Programming Languages
     value: 'Java, JavaScript - 15k lines<br/>C/C++ - 10k lines<br/>Python, TypeScript - 5k lines'
   - title: Tools and Technologies
-    value: Git, NextJS, ReactJS, NodeJS, GatsbyJS, GraphQL, HTML, CSS, TailwindCSS, Svelte, MongoDB, Mongoose, Firebase, MySQL
+    value: Git, Next.js, ReactJS, NodeJS, GatsbyJS, GraphQL, HTML, CSS, TailwindCSS, Svelte, MongoDB, Mongoose, Firebase, MySQL
   - title: Technical Electives
     value: Data Structures and Algorithms, Analysis and Design of Algorithms, Advanced Programming in Java, Computer Organization, Operating Systems, Discrete Maths, Database Management Systems
 
 # ? WORK EXPERIENCE
 work_experience:
   - title: Microsoft Engage
-    subtitle: Mentorship
+    subtitle: 'Mentor: Mr. Shanav Asija, Senior SWE at Microsoft'
     duration: Jun’ 21 - Present
     links:
       - name: Website
@@ -66,16 +66,17 @@ work_experience:
 # ? PROJECTS
 projects:
   - title: Microsoft Teams Clone
-    subtitle: 'Mentor: Mr. Shanav Asija, Senior SWE at Microsoft'
+    subtitle: Capstone Project of Microsoft Engage 2021
     duration: Jun’ 21 - Present
     team_size: 1
     links:
       - name: Website (Ongoing)
         link: https://msft.lohani.dev/
     bullets:
-      - Architected a fully-featured clone of Microsoft Teams, supporting video calling, group chat, and user authentication.
-      - Utilised WebSockets, WebRTC to establish secure connections between peers, and SFU for multi-party video calls.
-    tech_stack: Next.js, TailwindCSS, Express, MongoDB, Mongoose, WebRTC, Socket.io
+      - Architected a fully-featured clone of Microsoft Teams using agile methodology and test-driven development.
+      - Utilised WebSockets to build group chat from scratch, Twilio Video for multiparty video calls.
+      - Built a user authentication system with NextAuth, MongoDB and Mongoose.
+    tech_stack: Next.js, TailwindCSS, Express, MongoDB, Mongoose, Twilio, Socket.io
   - title: IIITD Playbook
     subtitle: Student Initiative
     duration: Jan’ 21 - Present
@@ -87,7 +88,7 @@ projects:
         link: https://ananya.li/pb
     tech_stack: ReactJS, Google Firebase, CSS, Material-UI
     bullets:
-      - IIITD Playbook provides multiple strategies, experiences, and stories from seniors and alumni to guide the current students of the college.
+      - IIITD Playbook provides multiple strategies, experiences, and stories to guide the current students of the college.
       - Coded the homepage, supplies, quickbites, and internship pages and redesigned the footer.
       - Optimized the performance of the website by hosting static assets on Statically.
       - Mentored new members on the web development team.
@@ -125,10 +126,12 @@ projects:
         link: https://github.com/ananyalohani/Perceptris
     tech_stack: Arduino, Processing, C++
     bullets:
-      - Built a multiplayer, human interactive version of the popular game Tetris using sensors like ultrasonic, touch and piezoelectric sensors.
+      - Built a multiplayer, gesture-controlled version of the game Tetris using ultrasonic, touch and piezoelectric sensors.
 
 # ? POSITIONS OF RESPONSIBILITY
 leadership:
+  - position: '<strong>Mentor</strong> at CollabConnect, a mentorship startup for students, founded by IIITD students.'
+    duration: Jul’ 21 - Present
   - position: '<strong>Mentored</strong> the web development team of IIITD Playbook, consisting of 5 members.'
     duration: Jan’ 21 - Present
   - position: '<strong>Webmaster</strong> of the o<span>f</span><span>f</span>icial website of CSE department of IIIT Delhi.'
