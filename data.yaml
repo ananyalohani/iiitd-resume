@@ -30,8 +30,8 @@ work_experience:
       - name: Website
         link: https://microsoft.acehacker.com/engage2021/
     bullets:
-      - Got the opportunity to be mentored by, and be a part of AMA Sessions, Webinars and talks by Microsoft employees.
-      - Architected and deployed a fully-featured video calling web-app under the guidance and feedback of mentors.
+      - Awarded the opportunity to attend exclusive webinars and AMA sessions by Microsoft.
+      - Designed, constructed and deployed a fully-featured video calling platform.
   - title: Web Developer, O<span>f</span><span>f</span>icial Website of CSE Department IIIT Delhi
     subtitle: 'Supervisor: Dr. Koteswar Rao Jerripothula'
     duration: Feb’ 21 - Present
@@ -73,10 +73,10 @@ projects:
       - name: Website (Ongoing)
         link: https://msft.lohani.dev/
     bullets:
-      - Architected a fully-featured clone of Microsoft Teams using agile methodology and test-driven development.
-      - Utilised WebSockets to build group chat from scratch, Twilio Video for multiparty video calls.
-      - Built a user authentication system with NextAuth, MongoDB and Mongoose.
-    tech_stack: Next.js, TailwindCSS, Express, MongoDB, Mongoose, Twilio, Socket.io
+      - Designed and developed a fully-featured clone of Microsoft Teams using Agile methods.
+      - Supports video call, group chat, authentication, network quality status, background filters, etc.
+      - Equipped to handle 25+ participants exchanging media via an SFU provided by Twilio.
+    tech_stack: Next.js, Tailwind CSS, Socket.io, Express, MongoDB, Mongoose, Twilio Video
   - title: IIITD Playbook
     subtitle: Student Initiative
     duration: Jan’ 21 - Present
