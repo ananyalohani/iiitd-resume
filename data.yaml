@@ -70,8 +70,10 @@ projects:
     duration: Jun’ 21 - Present
     team_size: 1
     links:
-      - name: Website (Ongoing)
+      - name: Website
         link: https://msft.lohani.dev/
+      - name: GitHub
+        link: https://github.com/ananyalohani/teams
     bullets:
       - Designed and developed a fully-featured clone of Microsoft Teams using Agile methods.
       - Supports video call, group chat, authentication, network quality status, background filters, etc.
