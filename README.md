@@ -48,3 +48,5 @@ IIITD folks, feel free to customize and use this for yourself and get :clap: tha
 ## Contact
 
 If this template helped you, or if you have any queries, feel free to reach out to me on [Telegram](https://t.me/ananyalohani).
+
+Created by [Ananya Lohani](https://lohani.dev).
