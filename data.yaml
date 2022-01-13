@@ -1,4 +1,21 @@
-# ? EDUCATION
+# BIO
+bio:
+  name: Ananya Lohani
+  roll_number: 2019018
+  email: ananya19018@iiitd.ac.in
+  github:
+    username: ananyalohani
+    link: https://ananya.li/gh
+  linkedin:
+    username: ananyalohani
+    link: https://ananya.li/linkedin
+  dob: 11 June 2001
+  website:
+    name: lohani.dev
+    link: https://lohani.dev
+  last_updated: 16 July 2021
+
+# EDUCATION
 education:
   - institution: Indraprastha Institute of Information Technology, Delhi
     degree: B.Tech. CSE
@@ -10,7 +27,7 @@ education:
     duration: 2017 - 2019
     grade: 'Percentage: 96%'
 
-# ? SKILLS
+# SKILLS
 skills:
   - title: Expertise Area
     value: Data Structures and Algorithms, Full Stack Development, Object Oriented Programming
@@ -21,7 +38,7 @@ skills:
   - title: Technical Electives
     value: Data Structures and Algorithms, Analysis and Design of Algorithms, Advanced Programming in Java, Computer Organization, Operating Systems, Discrete Maths, Database Management Systems
 
-# ? WORK EXPERIENCE
+# WORK EXPERIENCE
 work_experience:
   - title: Microsoft Engage
     subtitle: 'Mentor: Mr. Shanav Asija, Senior SWE at Microsoft'
@@ -63,7 +80,7 @@ work_experience:
       - Improved accessibility by making the website colorblind-safe. Fixed UI bugs.
       - Building an authentication system for various stakeholders of the NGO.
 
-# ? PROJECTS
+# PROJECTS
 projects:
   - title: Microsoft Teams Clone
     subtitle: Capstone Project of Microsoft Engage 2021
@@ -130,7 +147,7 @@ projects:
     bullets:
       - Built a multiplayer, gesture-controlled version of the game Tetris using ultrasonic, touch and piezoelectric sensors.
 
-# ? POSITIONS OF RESPONSIBILITY
+# POSITIONS OF RESPONSIBILITY
 leadership:
   - position: '<strong>Mentor</strong> at CollabConnect, a mentorship startup for students, founded by IIITD students.'
     duration: Jul’ 21 - Present
@@ -145,9 +162,14 @@ leadership:
   - position: '<strong>Event Head</strong> at Odyssey 2020 (cultural fest). Organised Acapellujah in a team of 3 with participation of 40+ colleges and amassed a sponsorship amount of INR 2 Lacs.'
     duration: Oct’ 19 - Jan’ 20
 
-# ? AWARDS AND ACHIEVEMENTS
+# AWARDS AND ACHIEVEMENTS
 achievements:
   - "<strong>Dean's List Award</strong> for Academic Excellence 2021."
   - '<strong>99.879th Percentile</strong> in JEE Main 2019 (Top 0.2%).'
   - '<strong>Gold Medal</strong> in Intraschool Mathematics Olympiad 2018.'
   - 'Awarded <strong>Distinction</strong> (highest grade) in Grade 3, Trinity Rock & Pop Vocals exam in 2015.'
+
+# INTERESTS AND HOBBIES
+interests:
+  - '<strong>Music</strong> - Active member of Audiobytes since 2019.'
+  - '<strong>Art</strong> - Made an <a href="https://www.instagram.com/lohani_art/">Instagram account</a> and <a href="https://www.youtube.com/channel/UCD027JiYyUAsKUrKOlms2iA">Youtube channel</a> dedicated to art.'

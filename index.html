@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>A4</title>
+    <title>IIITD Resume</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link
       rel="stylesheet"
@@ -22,27 +22,25 @@
   </head>
   <body class="A4">
     <section class="sheet padding-10mm">
-      <img src="iiitd.png" class="iiitd-logo" />
+      <img src="images/iiitd.png" class="iiitd-logo" />
       <div id="page1">
         <div id="header">
-          <h1 id="name">Ananya Lohani</h1>
+          <h1 id="name"></h1>
           <p>
-            2019018 | <strong>Email:</strong>
-            <a href="mailto:ananya19018@iiitd.ac.in">ananya19018@iiitd.ac.in</a>
+            <span id="roll-number"></span> | <strong>Email:</strong>
+            <a id="email"></a>
           </p>
           <p>
             <strong>GitHub:</strong>
-            <a href="https://ananya.li/gh" target="_blank">@ananyalohani</a> |
+            <a id="github" target="_blank"></a> |
             <strong>LinkedIn:</strong>
-            <a href="https://ananya.li/linkedin" target="_blank"
-              >@ananyalohani</a
-            >
+            <a id="linkedin" target="_blank"></a>
           </p>
           <p>
             <strong>DOB:</strong>
-            11 June 2001 |
+            <span id="dob"></span> |
             <strong>Website:</strong>
-            <a href="https://lohani.dev/" target="_blank">lohani.dev</a>
+            <a id="website" target="_blank"></a>
           </p>
         </div>
         <div id="education" class="section">
@@ -72,30 +70,15 @@
         </div>
         <div id="interests" class="section">
           <h3 class="section-title">Interests and Hobbies</h3>
-          <ul>
-            <li>
-              <strong>Music</strong> - Active member of Audiobytes since 2019.
-            </li>
-            <li>
-              <strong>Art</strong> - Made an
-              <a href="https://www.instagram.com/lohani_art/"
-                >Instagram account</a
-              >
-              and
-              <a href="https://www.youtube.com/channel/UCD027JiYyUAsKUrKOlms2iA"
-                >Youtube channel</a
-              >
-              dedicated to art.
-            </li>
-          </ul>
+          <ul id="interests-list"></ul>
         </div>
         <div>
           <p>
             <strong>Declaration:</strong> The above information is correct to
             the best of my knowledge.
           </p>
-          <p>Ananya Lohani</p>
-          <p>Date: 27 June, 2021</p>
+          <p id="signature"></p>
+          <p id="last-updated"></p>
         </div>
       </div>
     </section>
@@ -104,6 +87,31 @@
     $.get('data.yaml', function (text) {
       const data = jsyaml.load(text);
       console.log(data);
+
+      const nameNode = document.getElementById('name');
+      nameNode.innerHTML = data.bio.name;
+
+      const rollNumberNode = document.getElementById('roll-number');
+      rollNumberNode.innerHTML = data.bio.roll_number;
+
+      const emailNode = document.getElementById('email');
+      emailNode.innerHTML = data.bio.email;
+      emailNode.href = `mailto:${data.bio.email}`;
+
+      const githubNode = document.getElementById('github');
+      githubNode.innerHTML = `@${data.bio.github.username}`;
+      githubNode.href = data.bio.github.link;
+
+      const linkedinNode = document.getElementById('linkedin');
+      linkedinNode.innerHTML = `@${data.bio.linkedin.username}`;
+      linkedinNode.href = data.bio.linkedin.link;
+
+      const dobNode = document.getElementById('dob');
+      dobNode.innerHTML = data.bio.dob;
+
+      const websiteNode = document.getElementById('website');
+      websiteNode.innerHTML = data.bio.website.name;
+      websiteNode.href = data.bio.website.link;
 
       const educationNode = document.getElementById('education');
       let eduHTML = '';
@@ -239,6 +247,19 @@
         awardHTML += `<li>${item}</li>`;
       });
       awardNode.innerHTML += awardHTML;
+
+      const interestsNode = document.getElementById('interests-list');
+      let interestsHTML = '';
+      data.interests.map((item) => {
+        interestsHTML += `<li>${item}</li>`;
+      });
+      interestsNode.innerHTML += interestsHTML;
+
+      const signatureNode = document.getElementById('signature');
+      signatureNode.innerHTML = data.bio.name;
+
+      const dateNode = document.getElementById('last-updated');
+      dateNode.innerHTML = `Date: ${data.bio.last_updated}`;
     });
   </script>
 </html>
