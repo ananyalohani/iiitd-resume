@@ -40,9 +40,11 @@ IIITD folks, feel free to customize and use this for yourself and get :clap: tha
 4. Edit the data in [data.yaml](data.yaml)
 
 5. Refresh your webpage to see the changes. You might have to do a hard refresh (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> or <kbd>⌘⇧R</kbd>). At this point the webpage looks like this:
+
    ![Webpage Preview](images/screenshot1.png)
 
 6. Export the webpage to a PDF. Print the page (<kbd>Ctrl</kbd> + <kbd>P</kbd> or <kbd>⌘P</kbd>) and set the Destination as "Save as PDF".
+
    ![Print Preview](images/screenshot2.png)
 
 ## Contact
