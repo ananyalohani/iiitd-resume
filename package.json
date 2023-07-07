@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ananyalohani/IIITD-Resume#readme",
   "dependencies": {
     "http-server": "^14.1.0",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "puppeteer": "^20.8.0"
   }
 }
