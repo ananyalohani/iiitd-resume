@@ -11,7 +11,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start; /* Changed from space-around to flex-start */
 }
 
 #page2 {
@@ -19,7 +19,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* Changed from space-between to flex-start */
 }
 
 h1,
