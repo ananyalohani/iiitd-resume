@@ -44,16 +44,12 @@ IIITD folks, feel free to customize and use this for yourself and get :clap: tha
    ![Webpage Preview](images/screenshot1.png)
 
 6. Export the webpage to a text-readable PDF output file.
-- Install Puppeteer by running the following command:
-```bash
-  npm install puppeteer
-```
-- In `convertToPDF.js`, make changes if you have to, to the HTML page path (port change or a different route) and/or the name of your PDF output file.
-
-- Finally, run the JavaScript with the following command and your resume is generated in PDF.
-```bash
-  node convertToPDF.js
-```
+  - In `convertToPDF.js`, make changes if you have to, to the HTML page path (port change or a different route) and/or the name of your PDF output file.
+  
+  - Finally, run the JavaScript with the following command and your resume is generated in PDF.
+  ```bash
+    node convertToPDF.js
+  ```
 
 ## Contact
 
